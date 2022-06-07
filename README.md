@@ -1,5 +1,6 @@
-# CSE-0318-Summer-2021
-### This is Software Engineering Lab Repository
+# SUB Student Portal
+### This Project is make for Software Engineering Lab(CSE-0318)
+SUB Student Portal is is a system designed for the use of students, with the help of which many necessary tasks can be done very easily
 
 Name: Md. Khaled Saifullah Sadi
 

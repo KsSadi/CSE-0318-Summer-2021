@@ -1,0 +1,37 @@
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+
+
+RewriteRule ^registration/?$ 						/sub/register.php [L]
+RewriteRule ^login/?$ 								/sub/login.php [L]
+RewriteRule ^logout/?$ 								/sub/logout.php [L]
+RewriteRule ^forgot-passowrd/?$ 					/sub/reset.php [L]
+RewriteRule ^change-picture/?$ 						/sub/change_picture.php [L]
+RewriteRule ^change-password/?$ 					/sub/change_password.php [L]
+RewriteRule ^update-profile/?$ 						/sub/update.php [L]
+
+RewriteRule ^honours-form-fill-up/?$ 				/sub/honours.php [L]
+RewriteRule ^improvement-application-form/?$ 		/sub/improvement.php [L]
+RewriteRule ^masters-form-fill-up/?$ 				/sub/masters.php [L]
+RewriteRule ^honours-application-list/?$ 			/sub/applications.php [L]
+RewriteRule ^improvement-application-list/?$ 		/sub/improvement_list.php [L]
+RewriteRule ^masters-application-list/?$ 			/sub/applications_2.php [L]
+
+RewriteRule ^download-honours-application-form/?([0-9]+)?/?$ 		/sub/form_honours.php?id=$1 [L]
+RewriteRule ^download-honours-admit/?([0-9]+)?/?$ 					/sub/admit_honours.php?id=$1 [L]
+RewriteRule ^edit-honours-application-form/?([0-9]+)?/?$ 			/sub/edit_honours.php?id=$1 [L]
+
+RewriteRule ^download-masters-application-form/?([0-9]+)?/?$ 		/sub/form_masters.php?id=$1 [L]
+RewriteRule ^download-masters-admit/?([0-9]+)?/?$ 					/sub/admit_masters.php?id=$1 [L]
+RewriteRule ^edit-masters-application-form/?([0-9]+)?/?$ 			/sub/edit_masters.php?id=$1 [L]
+
+RewriteRule ^download-improvement-application-form/?([0-9]+)?/?$ 	/sub/form_improvement.php?id=$1 [L]
+RewriteRule ^edit-improvement-application-form/?([0-9]+)?/?$ 		/sub/edit_improvement.php?id=$1 [L]
+
+RewriteRule ^notices/?$ 					/sub/notices.php [L]
+RewriteRule ^notice/?([0-9]+)?/?$ 			/sub/notice.php?id=$1 [L]
+
+RewriteRule ^my-notices/?$ 					/sub/notices_private.php [L]
+RewriteRule ^my-notice/?([0-9]+)?/?$ 		/sub/notice_private.php?id=$1 [L]
